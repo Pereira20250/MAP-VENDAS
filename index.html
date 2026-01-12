@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>MAP VENDAS</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1f44">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+</head>
+<body>
+
+<header class="topo">
+  <img src="logo.png" class="logo">
+</header>
+
+<main class="produtos">
+
+  <div class="card">
+    <img src="everybody´s golf.jpeg" onclick="abrirModal(this.src)">
+    <h4>Everybody´s Golf</h4>
+    <p class="preco">50,00</p>
+    <button onclick="addCarrinho(this)">Adicionar</button>
+  </div>
+
+  <div class="card">
+    <img src="grand turismo.jpeg" onclick="abrirModal(this.src)">
+    <h4>Grand Turismo</h4>
+    <p class="preco">100,00</p>
+    <button onclick="addCarrinho(this)">Adicionar</button>
+  </div>
+
+  <div class="card">
+    <img src="controle preto.png" onclick="abrirModal(this.src)">
+    <h4>Controle Usado Xbox 360</h4>
+    <p class="preco">80,00</p>
+    <button onclick="addCarrinho(this)">Adicionar</button>
+  </div>
+
+  <div class="card">
+    <img src="image.png" onclick="abrirModal(this.src)">
+    <h4>Ei, Precisa de Ajuda? É só Chamar!</h4>
+    <p class="preco">120,00</p>
+    <button onclick="addCarrinho(this)">Adicionar</button>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 MAP VENDAS
+</footer>
+
+<!-- MODAL IMAGEM -->
+<div id="modalImg" class="modal" onclick="fecharModal()">
+  <img id="modalConteudo">
+</div>
+
+<!-- CARRINHO -->
+<div class="carrinho">
+  <div class="info">
+    <span id="contador">0 itens</span>
+    <strong id="total">R$ 0,00</strong>
+  </div>
+  <button onclick="finalizar()">Comprar pelo WhatsApp</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
